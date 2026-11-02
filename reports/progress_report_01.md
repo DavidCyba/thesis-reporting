@@ -8,6 +8,8 @@ title: Progress Report 01
 ##### One-Hop DW vs DWC
 Zunächst habe ich die bestehende One-Hop Architektur, wie wir sie bisher beim Dirac Wilson (DW) Operator verwendet haben nun für den Dirac Wilson Clover (DWC) Operator angewendet und die Ergebnisse verglichen.
 
+<br>
+
 ![One-Hop DW vs DWC](./images/DW_vs_DWC.png)
 
 Die Plots wurden dabei mit jeweils 10000 Training steps pro Massenpunkt (wobei die Konvergenz schon nach nur wenigen Hundert erreicht war), Weight Initialisierung mit der Identity und sonst mit dem Paper identischen Einstellungen erstellt.
@@ -70,7 +72,9 @@ Hierbei fällt auf, dass der Vorteil in Approximation Quality für negative Mass
 ##### Speed Comparison
 
 Während die One-Hop-Paths zu 9 Feature-Channel in den PT-Layers führen, werden mit den Circular Paths 57 Feature-Channel erzeugt. Erste experimentelle Vegleiche, bei sonst identischen Parametern und Berechnung auf Cuda zeigen, dass sich dabei die Geschwindigkeit eine feste Anzahl an Training Steps zu erreichen mit einer Anpassung von One-Hop-Paths auf Circular-Paths um einen Faktor **3,6** bei **einer** Layer verlängert und Faktor **6,1** bei **vier** Layers.
+
 <br>
+
 Hierbei ist es nicht überraschend, dass eine höhere Anzahl an Layers einen anderen Faktor verursacht, da die ersten und letzten Clifford Layers anders als die intermediate Layers skalieren. Hier könnte man bei Interesse auch das theoretische Scaling berechnen oder erweiterte Analysen im Zusammenhang mit Layers und Massen anstellen.
 
 ---
@@ -82,7 +86,9 @@ Hierbei ist es nicht überraschend, dass eine höhere Anzahl an Layers einen and
 Beim Trainieren für eine höhere Anzahl an Layern bin ich auf das Problem gestoßen, dass schon bei nur einer geringen Anzahl an Layers beim Training für positive Massen nach einigen Tausenden Training Steps plötzliche Spikes in der Approximation Quality auftreten, welche auch zu einem sichtbar schlechterem Endergebnis führen.
 <br>
 Ein Beispiel ist dabei hier dargestellt für eine Architektur von DW, 4 Layers und Weight Initialisierung mit der Identity für die Masse m = 2.0:
+
 <br>
+
 ![One-Hop DW vs DWC Zoom](./images/Spikes1.png)
 
 <br>
@@ -100,5 +106,8 @@ Dies stellt sich zum Problem dar, da auch in dem Bereich den ich untersuchen sol
 
 ##### Sonstiges
 Weiterführend habe ich mich mit Slurm Job Arrays beschäftigt, um Plots mit mehreren Massen effizient und einfach für verschiedene Konfigurationen zu erstellen.
+
+
+##### Code
 
 [Aktueller Code]({{ site.github.repository_url }}/tree/main/current_code)
