@@ -100,3 +100,5 @@ Dies stellt sich zum Problem dar, da auch in dem Bereich den ich untersuchen sol
 
 ##### Sonstiges
 Weiterführend habe ich mich mit Slurm Job Arrays beschäftigt, um Plots mit mehreren Massen effizient und einfach für verschiedene Konfigurationen zu erstellen.
+
+[Aktueller Code]({{ site.github.repository_url }}/tree/main/current_code)
