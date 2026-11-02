@@ -71,7 +71,7 @@ Hierbei fällt auf, dass der Vorteil in Approximation Quality für negative Mass
 
 ##### Speed Comparison
 
-Während die One-Hop-Paths zu 9 Feature-Channel in den PT-Layers führen, werden mit den Circular Paths 57 Feature-Channel erzeugt. Erste experimentelle Vegleiche, bei sonst identischen Parametern und Berechnung auf Cuda zeigen, dass sich dabei die Geschwindigkeit eine feste Anzahl an Training Steps zu erreichen mit einer Anpassung von One-Hop-Paths auf Circular-Paths um einen Faktor **3,6** bei **einer** Layer verlängert und Faktor **6,1** bei **vier** Layers.
+Während die One-Hop-Paths zu 9 Feature-Channel in den PT-Layers führen, werden mit den Circular Paths 57 Feature-Channel erzeugt. Erste experimentelle Vergleiche, bei sonst identischen Parametern und Berechnung auf CUDA zeigen, dass sich dabei die Geschwindigkeit eine feste Anzahl an Training Steps zu erreichen mit einer Anpassung von One-Hop-Paths auf Circular-Paths um einen Faktor **3,6** bei **einer** Layer verlängert und Faktor **6,1** bei **vier** Layers.
 
 <br>
 
