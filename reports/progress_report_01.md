@@ -95,10 +95,9 @@ Ein Beispiel ist dabei hier dargestellt für eine Architektur von DW, 4 Layers u
 Da die Spikes immer plötzlich und auch bei verschiedenen Durchläufen ab dem selben Training Step beginnen, habe ich daraufhin begonnen mit einer Reduktion in der Learning Rate zu experimentieren, wodurch die Spikes völlig reduziert werden können. Daraufhin habe ich auch learning rate scheduler wie ReduceLROnPlateau ausprobiert.
 <br>
 <br>
-Final konnte ich aber auch damit die Werte für positive Massen und mehrere Layer aus dem Paper nicht reproduzieren. Lediglich nur durch Kopie der Initialisierung mit der Hopping Expansion konnten diese Werte final erzielt werden. Die Initialisierung mit der Hopping Expansion habe ich allerdings noch nicht selber implementiert, kann diese bei Bedarf aber versuchen nachzubilden.
+Auch mit diesen Anpassungen konnte ich die im Paper angegebenen Werte für den Bereich der positive Massen und mehrere Layer bisher allerdings nicht reproduzieren. Diese konnte ich lediglich durch die Übernahme der Initialisierung mit der Hopping Expansion erreichen. Eine eigene Implementierung dieser Initialisierung steht noch aus, könnte ich bei Bedarf aber als nächsten Schritt angehen.
 <br>
 <br>
-Dies stellt sich zum Problem dar, da auch in dem Bereich den ich untersuchen soll, für m = 0.0 und 16 Layers die Spikes auftreten.
 
 ---
 
@@ -107,6 +106,9 @@ Dies stellt sich zum Problem dar, da auch in dem Bereich den ich untersuchen sol
 ##### Sonstiges
 Weiterführend habe ich mich mit Slurm Job Arrays beschäftigt, um Plots mit mehreren Massen effizient und einfach für verschiedene Konfigurationen zu erstellen.
 
+---
+
+<br>
 
 ##### Code
 
