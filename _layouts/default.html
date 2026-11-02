@@ -36,6 +36,22 @@
         html body .markdown-preview pre code {
             background: transparent;
         }
+        
+        /* Self-hosted Inter font */
+        @font-face {
+            font-family: "Inter";
+            src: url("{{ '/assets/fonts/InterVariable.woff2' | relative_url }}")
+                format("woff2");
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Document typography */
+        html body {
+            font-family: "Inter", "Helvetica Neue",
+                        "Segoe UI", Arial, sans-serif;
+        }
     </style>
 
     <!-- MathJax -->
