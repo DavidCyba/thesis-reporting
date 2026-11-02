@@ -1,3 +1,9 @@
+---
+layout: default
+title: Progress Report 01
+---
+
+
 # Progress Report 1
 ##### One-Hop DW vs DWC
 Zunächst habe ich die bestehende One-Hop Architektur, wie wir sie bisher beim Dirac Wilson (DW) Operator verwendet haben nun für den Dirac Wilson Clover (DWC) Operator angewendet und die Ergebnisse verglichen.
