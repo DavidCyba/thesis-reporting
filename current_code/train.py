@@ -220,7 +220,7 @@ def plotting():
         
     with torch.no_grad():
 
-        plt.figure(figsize=(8, 5), dpi=100)
+        plt.figure(figsize=(8, 5), dpi=150)
         plt.title("Approximation Quality over training steps")
         plt.plot(range(len(loss_history)), loss_history, label = "Approximation Quality")
         plt.yscale('log')
@@ -306,7 +306,7 @@ if __name__ == "__main__":
 
 
 
-    run(Operator="DW", NeuralNetwork = models.HCRes_VarAdapt, layers = 1, pathtype = 2)
+    run(Operator="DWC", NeuralNetwork = models.HCRes_VarAdapt, layers = 32, pathtype = 2)
     #calc_m(Operator="DW", NeuralNetwork = models.HCRes_VarAdapt, layers = 1,  pathtype = 2)
 
     #HL1
