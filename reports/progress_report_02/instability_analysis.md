@@ -15,6 +15,7 @@ V &= 4^3 \times 8 \\
 LR &= 1 \cdot 10^{-3}
 \end{aligned}
 $$
+
 geplottet. Die Instabilitäten scheinen dabei allerdings mit der Masse und der Anzahl an Layern zu korrelieren. So erhalte ich z.B für nur eine Layer nie Instabilitäten und für eine Masse von $m = 0.0$ erst Instabilitäten für mehr als 10 Layer.
 
 <br>
