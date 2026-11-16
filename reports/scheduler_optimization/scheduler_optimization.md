@@ -101,7 +101,7 @@ Zum Vergleich ist hier noch einmal die Kurve mit der Hopping Initialisierung abg
 
 Hier habe ich die neue Konfiguration des LR Schedulers mit dem im Paper vorhandenen Plot verglichen. Es lässt sich erkennen, dass nun auch für große Massen diese Werte bis zu vier Layer reproduziert werden können. Lediglich ab sechs und mehr Layer reichen die bestehenden 10 000 Training Steps nicht dafür aus.
 
-Sonstige Ergebnisse für geringe Anzahl an Layer und niedrige Massen bleiben unverändert und reproduzieren weiterhin problemlos die bestehenden Werte aus dem Paper.
+Sonstige Ergebnisse für geringe Anzahlen an Layer und niedrigere Massen bleiben unverändert und reproduzieren weiterhin problemlos die bestehenden Werte aus dem Paper.
 
 <br>
 
