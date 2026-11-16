@@ -36,11 +36,12 @@ $$
 <br>
 
 Aus experimentellen Versuchen lässt sich soweit schließen: 
-1. Das Auftreten von Instabilitäten führt nicht zwangsläufig zu einer Verschlechterung im Training. So kann die unter den Instabilitäten zugrunde liegende Kurve weiterhin sichtbar konvergieren. 
+
+- Das Auftreten von Instabilitäten führt nicht zwangsläufig zu einer Verschlechterung im Training. So kann die unter den Instabilitäten zugrunde liegende Kurve weiterhin sichtbar konvergieren. 
 
 <br>
 
-2. Es zeigt sich außerdem, dass auch ohne Instabilitäten eine Verringerung der Learning Rate in manchen Fällen zu einem besseren Endergebnis im Training führen kann. Manchmal sogar mit einer sichtbar schnelleren Konvergenz ab Verringerung der Learning Rate
+- Es zeigt sich außerdem, dass auch ohne Instabilitäten eine Verringerung der Learning Rate in manchen Fällen zu einem besseren Endergebnis im Training führen kann. Manchmal sogar mit einer sichtbar schnelleren Konvergenz ab Verringerung der Learning Rate
 
 <br>
 
@@ -72,7 +73,10 @@ Wie man sehen kann konnte durch das Learning Rate Scheduling eine starke Verbess
 
 Bei einem Training mit bis zu 20 000 Training Steps konnte ein Endergebnis von $6.9 \cdot 10^{-5}$ erzielt werden:
 
+<br>
+
 ![One-Hop DW vs DWC](./images/DW%20-%20Using%20HCRes_VarAdapt%204%20layers%20with%2020000%20steps%20and%20pathtype%202_M2.0.png)
+
 <br>
 
 Zum Vergleich ist hier noch einmal die Kurve mit der Hopping Initialisierung abgebildet:
@@ -105,9 +109,11 @@ Sonstige Ergebnisse für geringe Anzahl an Layer und niedrige Massen bleiben unv
 
 <br>
 
-##### Fazit und weitere Schritte
+#### Fazit und weitere Schritte
 Durch das weitere Experimentieren mit den Parametern des LR Schedulers hat sich gezeigt, dass mittels Identity Initialisierung eine Approximation Quality wie mit der Hopping Initialisierung in einer angemessenen Anzahl von Training Steps erzielt werden kann.
 
 Ein gezieltes Testen der Parameterlandschaft für ein bestmögliches Endergebnis mittels Hyperparameter Tuning wie **Optuna** habe ich bereits begonnen. 
 
 Hierbei steht noch aus ob es eine universell beste Konfiguration für den LR Scheduler gibt, welche sowohl für alle Massen und Architekturen das bestmögliche Ergebnis erzielt oder ob diese architekturspezifisch ist.
+
+[Vorherige Reports](https://davidcyba.github.io/thesis-reporting/)
